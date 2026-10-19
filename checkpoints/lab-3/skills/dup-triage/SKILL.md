@@ -43,6 +43,16 @@ it if it is missing. One entry per pair you judged:
 }
 ```
 
+Compute fingerprints ONLY with this exact command, every run, so a re-run gets
+the same values (do not invent your own hashing):
+
+```bash
+python3 -c "import json,hashlib,sys; print(json.dumps({str(i['number']): hashlib.sha256((i['title']+'\n'+(i.get('body') or '')).encode('utf-8')).hexdigest() for i in json.load(open(sys.argv[1]))}))" data/issues.json
+```
+
+It prints `{"7": "<hex>", ...}`. A pair's fingerprint is
+`<hex of the lower number>|<hex of the higher number>`.
+
 `verdict` is `duplicate`, `related` or `different`. Before you compare a pair,
 look it up. If the entry exists and both fingerprints still match, reuse the
 verdict and do not read the two issues again. Only judge new pairs and pairs
@@ -62,6 +72,10 @@ When there are more than 12 issues, do not compare them all in one turn:
 3. Each subagent returns candidate pairs for its batch: the two numbers, the
    shared root cause, one quote from each, and a confidence. It writes no
    files and posts nothing.
+   In Normal approval mode each subagent waits for the person's OK before it
+   starts. Right after `spawn_run`, tell the person in one line: "N helpers
+   are waiting for your OK: press Review in panel, then Allow." Do not cancel
+   them or redo their work while they wait.
 4. Wait for all of them. Then you check every candidate against both bodies,
    merge pairs into groups, update `dup-triage-verdicts.json`, and write the
    report.
@@ -129,6 +143,7 @@ Only when the person asks you to post, in this chat:
 
 ## Rules
 
+- Never read `answer-key.md`, `checkpoints/` or `seed/`.
 - Read-only on the base repo `KiroCrewCaptain/ato-2026-dup-triage`, always.
 - Outside section 8: never run `gh issue comment`, `gh issue edit`,
   `gh issue close`, `gh label`, or `gh api` with a write method.

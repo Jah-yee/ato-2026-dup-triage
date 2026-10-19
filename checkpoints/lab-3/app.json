@@ -1,7 +1,7 @@
 {
   "name": "dup-triage",
   "version": "0.3.0",
-  "displayName": "Dup Triage",
+  "displayName": "Dup Detective",
   "description": "Finds likely duplicate GitHub issues and explains every match. Drafts by default; posts one comment, only on your own fork, only after your yes.",
   "author": "ATO 2026 workshop",
   "license": "Apache-2.0",
@@ -21,7 +21,7 @@
     "pages": [
       {
         "route": "/apps/dup-triage",
-        "label": "Dup Triage",
+        "label": "Dup Detective",
         "icon": "Package"
       }
     ]

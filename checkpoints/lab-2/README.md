@@ -21,7 +21,7 @@ kirocrew app uninstall dup-triage      # only if an older copy is installed
 kirocrew app install "$PWD/dup-triage"
 ```
 
-Trust it in the dashboard: Apps → Library → Show disabled apps → Dup Triage → Enable → **Trust this app and enable**. Do not turn on *Trust every third-party app* in Settings. Once trusted, the terminal also works:
+Trust it in the dashboard: Apps → Library → Show N disabled apps → Dup Detective → ⋯ → Enable → **Trust this app and enable**. Do not turn on *Trust every third-party app* in Settings. Once trusted, the terminal also works:
 
 ```bash
 kirocrew app enable dup-triage

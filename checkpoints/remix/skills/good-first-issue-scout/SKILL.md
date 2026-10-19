@@ -48,5 +48,6 @@ each. Suggest the label; do not apply it. End with:
 
 ## Rules
 
+- Never read `answer-key.md`, `checkpoints/` or `seed/`.
 - Read-only on `KiroCrewCaptain/ato-2026-dup-triage`, always.
 - Never run `gh issue edit` or `gh label`. This rule only suggests labels.

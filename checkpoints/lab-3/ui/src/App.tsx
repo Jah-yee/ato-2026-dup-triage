@@ -38,7 +38,7 @@ export default function DupTriage() {
 
   return (
     <>
-      <PageHeader title="Dup Triage" subtitle="Finds duplicate issues and explains every match. Drafts only." />
+      <PageHeader title="Dup Detective" subtitle="Finds duplicate issues and explains every match. Drafts only." />
       <div className="px-6 pb-8 overflow-y-auto flex-1 min-h-0">
         <div className="grid gap-3.5 grid-cols-[repeat(auto-fit,minmax(180px,1fr))] mb-6">
           <StatCard label="Schedule" value={scheduleState} accent={scheduleState === 'on'} />
@@ -48,9 +48,11 @@ export default function DupTriage() {
         <Card>
           <CardTitle>Run it now</CardTitle>
           <p className="text-sm text-muted mb-3">
-            Opens a new chat with the run prompt as a draft. Read it, then press send.
+            Opens a new chat with the dup-triage agent. Set Project to your clone, then paste this
+            prompt if the box is empty and press send:
           </p>
-          <Btn onClick={() => openChat({ message: RUN_PROMPT, autoSend: false })}>Draft a run in chat</Btn>
+          <pre className="text-xs mb-3 whitespace-pre-wrap select-all">{RUN_PROMPT}</pre>
+          <Btn onClick={() => openChat({ agent: 'dup-triage', message: RUN_PROMPT, autoSend: false })}>Draft a run in chat</Btn>
         </Card>
 
         <Card>

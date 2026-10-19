@@ -27,6 +27,9 @@ words, from different OSes and versions.
      kirocrew gateway        # dashboard at http://localhost:5476; leave it running
      ```
 
+     Linux only: if Kiro Crew shows **Sandbox unavailable**, run
+     `sudo sysctl -w kernel.unprivileged_userns_clone=1`, then restart the gateway.
+
 2. **Sign in.** The dashboard opens on the **Set up Kiro** page. Copy the
    sign-in command shown there, run it in a terminal, finish the sign-in in
    your browser, then press **Check sign-in again**. Use the command exactly
@@ -122,8 +125,8 @@ kirocrew app uninstall dup-triage
 kirocrew app install "$PWD\dup-triage"
 ```
 
-Then trust and enable it in the dashboard: **Apps → Library → Show disabled
-apps → Dup Triage → Enable → Trust this app and enable**. Do **not** turn on
+Then trust and enable it in the dashboard: **Apps → Library → Show N disabled
+apps → Dup Detective → ⋯ → Enable → Trust this app and enable**. Do **not** turn on
 *Trust every third-party app* in Settings: that admits every third-party app,
 not just this one. (Settings → Security → Third-party apps is where you remove
 trust later.) An uninstall removes the trust, so trust it again after each
@@ -142,7 +145,8 @@ Give your app a second rule. Two are ready in `checkpoints/remix/skills/`:
 
 To add one: copy its folder into `dup-triage/skills/`, add its path to
 `"skills"` in `dup-triage/app.json` (for example
-`"skills/missing-info-nudger"`), then reinstall, trust and enable as above.
+`"skills/missing-info-nudger"`), then reinstall, trust and enable as above. No agent edit: the agent's
+`"resources"` line already maps every skill in the app.
 `answer-key.md` lists the expected issues for both.
 
 ## What the app may and may not do

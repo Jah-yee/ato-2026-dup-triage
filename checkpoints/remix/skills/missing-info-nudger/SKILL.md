@@ -55,6 +55,7 @@ one section per issue with what is missing and the draft reply, then the
 
 ## Rules
 
+- Never read `answer-key.md`, `checkpoints/` or `seed/`.
 - Read-only on `KiroCrewCaptain/ato-2026-dup-triage`, always.
 - Posting a draft follows section 8 of the dup-triage skill: the person's own
   fork only, the exact command shown, one comment per explicit yes, never in a

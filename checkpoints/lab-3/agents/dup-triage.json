@@ -10,5 +10,6 @@
     "grep",
     "glob",
     "@kirocrew-core"
-  ]
+  ],
+  "resources": ["skill://~/.kiro/crew/skills/dup-triage/*/SKILL.md"]
 }

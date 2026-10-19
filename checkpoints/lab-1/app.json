@@ -1,7 +1,7 @@
 {
   "name": "dup-triage",
   "version": "0.1.0",
-  "displayName": "Dup Triage",
+  "displayName": "Dup Detective",
   "description": "Finds likely duplicate GitHub issues and explains every match. Drafts only; never posts.",
   "author": "ATO 2026 workshop",
   "license": "Apache-2.0",

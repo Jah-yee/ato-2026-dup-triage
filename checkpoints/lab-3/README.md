@@ -9,7 +9,7 @@ Adds to Lab 2:
 - **Boundary**: section 8 of the skill. The app posts one comment, only on
   your own fork, only after it shows you the exact command and you answer
   yes in chat. It refuses to write to `KiroCrewCaptain/ato-2026-dup-triage`.
-- **Page**: a Dup Triage page in the sidebar (`ui/`). It shows the schedule
+- **Page**: a Dup Detective page in the sidebar (`ui/`). It shows the schedule
   state and the boundary, and drafts a run in a new chat for you to send.
   `ui/dist/index.mjs` is pre-built, so installing needs no Node.js.
   `app.json` declares `"api": ["/api/crons"]` for the schedule card.
@@ -25,7 +25,7 @@ kirocrew app uninstall dup-triage      # only if an older copy is installed
 kirocrew app install "$PWD/dup-triage"
 ```
 
-Trust it in the dashboard: Apps → Library → Show disabled apps → Dup Triage → Enable → **Trust this app and enable**. Do not turn on *Trust every third-party app* in Settings. Once trusted, the terminal also works:
+Trust it in the dashboard: Apps → Library → Show N disabled apps → Dup Detective → ⋯ → Enable → **Trust this app and enable**. Do not turn on *Trust every third-party app* in Settings. Once trusted, the terminal also works:
 
 ```bash
 kirocrew app enable dup-triage

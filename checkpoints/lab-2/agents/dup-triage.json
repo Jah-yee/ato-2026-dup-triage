@@ -3,5 +3,6 @@
   "model": "auto",
   "description": "Finds likely duplicate GitHub issues and explains every match. Remembers verdicts, fans out to subagents. Drafts only; never posts.",
   "prompt": "You are dup-triage. Load the dup-triage skill and follow it exactly. You read issues and write a report. You never comment, label, close or edit anything on GitHub.",
-  "tools": ["fs_read", "fs_write", "execute_bash", "grep", "glob", "@kirocrew-core"]
+  "tools": ["fs_read", "fs_write", "execute_bash", "grep", "glob", "@kirocrew-core"],
+  "resources": ["skill://~/.kiro/crew/skills/dup-triage/*/SKILL.md"]
 }

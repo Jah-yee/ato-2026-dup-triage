@@ -13,7 +13,7 @@ function P() {
   }, []);
   const o = a ? "unknown" : n ? n.enabled ? "on" : "paused" : "not registered";
   return /* @__PURE__ */ t(g, { children: [
-    /* @__PURE__ */ e(x, { title: "Dup Triage", subtitle: "Finds duplicate issues and explains every match. Drafts only." }),
+    /* @__PURE__ */ e(x, { title: "Dup Detective", subtitle: "Finds duplicate issues and explains every match. Drafts only." }),
     /* @__PURE__ */ t("div", { className: "px-6 pb-8 overflow-y-auto flex-1 min-h-0", children: [
       /* @__PURE__ */ t("div", { className: "grid gap-3.5 grid-cols-[repeat(auto-fit,minmax(180px,1fr))] mb-6", children: [
         /* @__PURE__ */ e(d, { label: "Schedule", value: o, accent: o === "on" }),
@@ -21,8 +21,9 @@ function P() {
       ] }),
       /* @__PURE__ */ t(r, { children: [
         /* @__PURE__ */ e(i, { children: "Run it now" }),
-        /* @__PURE__ */ e("p", { className: "text-sm text-muted mb-3", children: "Opens a new chat with the run prompt as a draft. Read it, then press send." }),
-        /* @__PURE__ */ e(w, { onClick: () => c({ message: j, autoSend: !1 }), children: "Draft a run in chat" })
+        /* @__PURE__ */ e("p", { className: "text-sm text-muted mb-3", children: "Opens a new chat with the dup-triage agent. Set Project to your clone, then paste this prompt if the box is empty and press send:" }),
+        /* @__PURE__ */ e("pre", { className: "text-xs mb-3 whitespace-pre-wrap select-all", children: j }),
+        /* @__PURE__ */ e(w, { onClick: () => c({ agent: "dup-triage", message: j, autoSend: !1 }), children: "Draft a run in chat" })
       ] }),
       /* @__PURE__ */ t(r, { children: [
         /* @__PURE__ */ e(i, { children: "Schedule" }),

@@ -59,6 +59,7 @@ path. Start it with the source, the issue count and the time. End it with:
 
 ## Rules
 
+- Never read `answer-key.md`, `checkpoints/` or `seed/`.
 - Read-only on GitHub. Never run `gh issue comment`, `gh issue edit`,
   `gh issue close`, `gh label`, or `gh api` with a write method.
 - If you are asked to post, say that this version of the app only drafts.
