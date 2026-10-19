@@ -88,7 +88,7 @@ gh issue list -R KiroCrewCaptain/ato-2026-dup-triage --state open --limit 100 \
 Each lab follows the slides. When you finish a lab, compare your report with
 **[answer-key.md](answer-key.md)**. That is the Check step.
 
-### Lab 1: Find duplicates and explain each match (3:00–3:30 PM ET)
+### Lab 1: Find duplicates and explain each match (2:55–3:30 PM ET)
 
 Scaffold the app with `kirocrew app init dup-triage --cron`, write the skill,
 install it, and get a report that explains every match. See the slides.
@@ -97,7 +97,7 @@ install it, and get a report that explains every match. See the slides.
 
 Make it remember verdicts and fan the work out to subagents. See the slides.
 
-### Lab 3: Schedule, permission boundary, and a page (4:00–4:20 PM ET)
+### Lab 3: Schedule, permission boundary, and a page (4:00–4:18 PM ET)
 
 Put it on a schedule, add the approval boundary, add its page. See the slides.
 
@@ -122,9 +122,13 @@ kirocrew app uninstall dup-triage
 kirocrew app install "$PWD\dup-triage"
 ```
 
-Then trust the app in **Settings → Security → Third-party apps** and run
-`kirocrew app enable dup-triage`. An uninstall removes the trust, so trust it
-again after each reinstall.
+Then trust and enable it in the dashboard: **Apps → Library → Show disabled
+apps → Dup Triage → Enable → Trust this app and enable**. Do **not** turn on
+*Trust every third-party app* in Settings: that admits every third-party app,
+not just this one. (Settings → Security → Third-party apps is where you remove
+trust later.) An uninstall removes the trust, so trust it again after each
+reinstall. If the app is already trusted, `kirocrew app enable dup-triage`
+enables it from the terminal.
 
 ### Finished early? Remix your app
 
