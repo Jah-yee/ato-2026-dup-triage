@@ -70,7 +70,7 @@ GitHub forks copy code, not issues. So:
 ### Offline fallback
 
 `data/issues.json` is the base repo's issues, in exactly the shape
-`gh issue list --json number,title,body,labels` returns. Use it when Wi-Fi or
+`gh issue list --limit 100 --json number,title,body,labels` returns. Use it when Wi-Fi or
 GitHub is slow.
 
 **Offline issue data does not make the model work offline.** The agent still
