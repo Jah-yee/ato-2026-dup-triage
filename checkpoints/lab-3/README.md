@@ -8,7 +8,7 @@ Adds to Lab 2:
   A scheduled run never posts.
 - **Boundary**: section 8 of the skill. The app posts one comment, only on
   your own fork, only after it shows you the exact command and you answer
-  yes in chat. It refuses to write to `ORG/ato-2026-dup-triage`.
+  yes in chat. It refuses to write to `KiroCrewCaptain/ato-2026-dup-triage`.
 - **Page**: a Dup Triage page in the sidebar (`ui/`). It shows the schedule
   state and the boundary, and drafts a run in a new chat for you to send.
   `ui/dist/index.mjs` is pre-built, so installing needs no Node.js.
@@ -38,6 +38,6 @@ reinstall.
 ## Check
 
 - `kirocrew cron list` shows `dup-triage/dup-triage-daily`, paused.
-- Ask it to post on `ORG/ato-2026-dup-triage`: it refuses.
+- Ask it to post on `KiroCrewCaptain/ato-2026-dup-triage`: it refuses.
 - Ask it to post on an issue in your fork: it shows the command and waits
   for your yes.

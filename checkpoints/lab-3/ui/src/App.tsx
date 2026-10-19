@@ -5,7 +5,7 @@ import { useEffect, useState } from 'react'
 // The one prompt this page sends. It is shown to the user as a draft in a new
 // chat (autoSend: false), so nothing runs until they press send.
 const RUN_PROMPT =
-  'Use the dup-triage skill on the open issues of ORG/ato-2026-dup-triage ' +
+  'Use the dup-triage skill on the open issues of KiroCrewCaptain/ato-2026-dup-triage ' +
   '(or data/issues.json if GitHub is unreachable). Write dup-triage-report.md. Post nothing.'
 
 type Job = {
@@ -67,7 +67,7 @@ export default function DupTriage() {
         <Card>
           <CardTitle>The boundary</CardTitle>
           <ul className="text-sm text-muted list-disc pl-5">
-            <li>Reads issues from ORG/ato-2026-dup-triage or data/issues.json.</li>
+            <li>Reads issues from KiroCrewCaptain/ato-2026-dup-triage or data/issues.json.</li>
             <li>Writes only dup-triage-report.md and dup-triage-verdicts.json on your machine.</li>
             <li>Never posts on a schedule.</li>
             <li>Posts one comment, only on your own fork, only after you say yes in chat.</li>

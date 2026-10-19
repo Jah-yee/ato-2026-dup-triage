@@ -2,7 +2,7 @@ import { jsxs as t, Fragment as g, jsx as e } from "react/jsx-runtime";
 import { useAppApi as y, useChatLauncher as b } from "@kirocrew/app-sdk";
 import { PageHeader as x, StatCard as d, Card as r, CardTitle as i, Btn as w } from "@kirocrew/app-sdk/ui";
 import { useState as l, useEffect as S } from "react";
-const j = "Use the dup-triage skill on the open issues of ORG/ato-2026-dup-triage (or data/issues.json if GitHub is unreachable). Write dup-triage-report.md. Post nothing.";
+const j = "Use the dup-triage skill on the open issues of KiroCrewCaptain/ato-2026-dup-triage (or data/issues.json if GitHub is unreachable). Write dup-triage-report.md. Post nothing.";
 function P() {
   const u = y(), { openChat: c } = b(), [n, h] = l(null), [a, p] = l("");
   S(() => {
@@ -31,7 +31,7 @@ function P() {
       /* @__PURE__ */ t(r, { children: [
         /* @__PURE__ */ e(i, { children: "The boundary" }),
         /* @__PURE__ */ t("ul", { className: "text-sm text-muted list-disc pl-5", children: [
-          /* @__PURE__ */ e("li", { children: "Reads issues from ORG/ato-2026-dup-triage or data/issues.json." }),
+          /* @__PURE__ */ e("li", { children: "Reads issues from KiroCrewCaptain/ato-2026-dup-triage or data/issues.json." }),
           /* @__PURE__ */ e("li", { children: "Writes only dup-triage-report.md and dup-triage-verdicts.json on your machine." }),
           /* @__PURE__ */ e("li", { children: "Never posts on a schedule." }),
           /* @__PURE__ */ e("li", { children: "Posts one comment, only on your own fork, only after you say yes in chat." })

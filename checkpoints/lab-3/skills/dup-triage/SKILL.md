@@ -16,7 +16,7 @@ Use the first one that works:
 1. The live base repo (read-only):
 
    ```bash
-   gh issue list -R ORG/ato-2026-dup-triage --state open --limit 100 \
+   gh issue list -R KiroCrewCaptain/ato-2026-dup-triage --state open --limit 100 \
      --json number,title,body,labels > issues.json
    ```
 
@@ -112,7 +112,7 @@ answer. End with the report path.
 Only when the person asks you to post, in this chat:
 
 1. The target must be the person's OWN fork, never the base repo. If the
-   target repo is `ORG/ato-2026-dup-triage`, refuse and say why. If you do not
+   target repo is `KiroCrewCaptain/ato-2026-dup-triage`, refuse and say why. If you do not
    know the fork's name, ask for it; do not guess.
 2. The target issue must exist in that fork. Forks do not copy issues: the
    person opens a practice issue in their fork first.
@@ -129,7 +129,7 @@ Only when the person asks you to post, in this chat:
 
 ## Rules
 
-- Read-only on the base repo `ORG/ato-2026-dup-triage`, always.
+- Read-only on the base repo `KiroCrewCaptain/ato-2026-dup-triage`, always.
 - Outside section 8: never run `gh issue comment`, `gh issue edit`,
   `gh issue close`, `gh label`, or `gh api` with a write method.
 - Subagents and scheduled runs never post. Tell subagents so in their task.

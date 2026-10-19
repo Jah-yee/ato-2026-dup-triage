@@ -25,7 +25,7 @@ import shlex
 import subprocess
 import sys
 
-DEFAULT_REPO = "ORG/ato-2026-dup-triage"
+DEFAULT_REPO = "KiroCrewCaptain/ato-2026-dup-triage"
 
 seed_path, *args = sys.argv[1:]
 repo, apply = DEFAULT_REPO, False

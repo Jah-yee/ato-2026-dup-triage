@@ -1,6 +1,6 @@
 # Answer key
 
-The expected result for the seeded issues of `ORG/ato-2026-dup-triage`
+The expected result for the seeded issues of `KiroCrewCaptain/ato-2026-dup-triage`
 (the same 45 issues as `data/issues.json`). Use it as the **Check** step of
 every lab: compare the app's report with this page.
 

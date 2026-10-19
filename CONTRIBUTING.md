@@ -5,7 +5,7 @@ This repo is workshop material for the All Things Open 2026 session
 the duplicates, so the workshop app has something to triage.
 
 - Please do not open real issues or pull requests against
-  `ORG/ato-2026-dup-triage`. Adding issues shifts the numbers that
+  `KiroCrewCaptain/ato-2026-dup-triage`. Adding issues shifts the numbers that
   `answer-key.md` and `data/issues.json` depend on.
 - To practice, fork the repo and turn on Issues in your fork
   (Settings → General → Features → Issues).

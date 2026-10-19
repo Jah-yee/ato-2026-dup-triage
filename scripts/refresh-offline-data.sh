@@ -6,7 +6,7 @@
 #   scripts/refresh-offline-data.sh [OWNER/NAME]
 set -euo pipefail
 
-REPO="${1:-ORG/ato-2026-dup-triage}"
+REPO="${1:-KiroCrewCaptain/ato-2026-dup-triage}"
 HERE="$(cd "$(dirname "$0")" && pwd)"
 OUT="$HERE/../data/issues.json"
 

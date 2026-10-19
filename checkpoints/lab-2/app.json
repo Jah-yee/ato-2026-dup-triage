@@ -18,7 +18,7 @@
       "name": "dup-triage-daily",
       "cron_expr": "0 7 * * 1-5",
       "timezone": "America/New_York",
-      "message": "Use the dup-triage skill on the open issues of ORG/ato-2026-dup-triage. Write dup-triage-report.md. Post nothing.",
+      "message": "Use the dup-triage skill on the open issues of KiroCrewCaptain/ato-2026-dup-triage. Write dup-triage-report.md. Post nothing.",
       "enabled": false
     }
   ],

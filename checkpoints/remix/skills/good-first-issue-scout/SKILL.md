@@ -13,7 +13,7 @@ find issues a newcomer could finish in one sitting.
 Same as the dup-triage skill: the live base repo (read-only)
 
 ```bash
-gh issue list -R ORG/ato-2026-dup-triage --state open --limit 100 \
+gh issue list -R KiroCrewCaptain/ato-2026-dup-triage --state open --limit 100 \
   --json number,title,body,labels > issues.json
 ```
 
@@ -48,5 +48,5 @@ each. Suggest the label; do not apply it. End with:
 
 ## Rules
 
-- Read-only on `ORG/ato-2026-dup-triage`, always.
+- Read-only on `KiroCrewCaptain/ato-2026-dup-triage`, always.
 - Never run `gh issue edit` or `gh label`. This rule only suggests labels.

@@ -60,7 +60,7 @@ words, from different OSes and versions.
 
 GitHub forks copy code, not issues. So:
 
-- The app **reads** issues from the base repo `ORG/ato-2026-dup-triage`
+- The app **reads** issues from the base repo `KiroCrewCaptain/ato-2026-dup-triage`
   (public, read-only for you), or from `data/issues.json` in your clone.
 - You never write to the base repo.
 - To practice posting a comment, open your own issue in **your fork**. Turn
@@ -79,7 +79,7 @@ needs the internet to reach the model.
 To fetch the live issues (all of them; the default limit is 30):
 
 ```bash
-gh issue list -R ORG/ato-2026-dup-triage --state open --limit 100 \
+gh issue list -R KiroCrewCaptain/ato-2026-dup-triage --state open --limit 100 \
   --json number,title,body,labels > issues.json
 ```
 
@@ -145,9 +145,9 @@ To add one: copy its folder into `dup-triage/skills/`, add its path to
 
 | | Allowed |
 |---|---|
-| Read issues from `ORG/ato-2026-dup-triage` or `data/issues.json` | yes |
+| Read issues from `KiroCrewCaptain/ato-2026-dup-triage` or `data/issues.json` | yes |
 | Write `dup-triage-report.md` and `dup-triage-verdicts.json` on your machine | yes |
-| Write anything to `ORG/ato-2026-dup-triage` | never |
+| Write anything to `KiroCrewCaptain/ato-2026-dup-triage` | never |
 | Post from a scheduled run | never |
 | Post one comment on an issue in **your fork** | only after it shows you the command and you say yes |
 

@@ -13,7 +13,7 @@ find bug reports a maintainer cannot act on yet, and draft the nudge.
 Same as the dup-triage skill: the live base repo (read-only)
 
 ```bash
-gh issue list -R ORG/ato-2026-dup-triage --state open --limit 100 \
+gh issue list -R KiroCrewCaptain/ato-2026-dup-triage --state open --limit 100 \
   --json number,title,body,labels > issues.json
 ```
 
@@ -55,7 +55,7 @@ one section per issue with what is missing and the draft reply, then the
 
 ## Rules
 
-- Read-only on `ORG/ato-2026-dup-triage`, always.
+- Read-only on `KiroCrewCaptain/ato-2026-dup-triage`, always.
 - Posting a draft follows section 8 of the dup-triage skill: the person's own
   fork only, the exact command shown, one comment per explicit yes, never in a
   scheduled run.
